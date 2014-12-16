@@ -1,0 +1,174 @@
+body{
+  background: rgb(253, 246, 227);
+  font-family: 'Fira Mono' ;
+}
+
+#board{
+  position:relative;
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 1000px;
+  height: 650px;
+  background-image: url('../images/background1.png');
+  cursor: none;
+}
+
+/*#board:active{
+  cursor: url(../images/keyboard-tap.png), auto;
+}*/
+
+.bug{
+  width: 100px;
+  height: 100px;
+  clip: rect(0px,100px,100px,0px);
+  position: absolute;
+}
+
+@-webkit-keyframes typing {
+    from { width: 0 }
+    to { width:16.3em }
+}
+
+@-moz-keyframes typing {
+    from { width: 0 }
+    to { width:16.3em }
+}
+
+@-webkit-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+@-moz-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+h1 { 
+  font-size:500%;
+  width:16.3em;
+  color: rgb(100, 175, 217);
+  white-space:nowrap;
+  overflow:hidden;
+  border-right: .1em solid black;
+
+  -webkit-animation: typing 9s steps(90, end), /* # of steps = # of characters */
+  blink-caret 1s step-end infinite;
+  -moz-animation: typing 9s steps(90, end), /* # of steps = # of characters */
+  blink-caret 1s step-end infinite;
+}
+
+h1 span{
+  font-size: 35.5%;
+  color: black;
+}
+
+h2{
+  color: rgb(100, 175, 217);
+  font-size: 150px;
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn; 
+
+  animation-duration: 1.5s; 
+  -webkit-animation-duration: 1.5s;
+
+  animation-timing-function: ease-in-out; 
+  -webkit-animation-timing-function: ease-in-out;   
+
+  visibility: visible !important; 
+}
+
+@keyframes fadeIn{
+  0% {
+    transform: scale(0);
+    opacity: 0.0;   
+  }
+  60% {
+    transform: scale(1.1);  
+  }
+  80% {
+    transform: scale(0.9);
+    opacity: 1; 
+  } 
+  100% {
+    transform: scale(1);
+    opacity: 1; 
+  }   
+}
+
+@-webkit-keyframes fadeIn{
+  0% {
+    -webkit-transform: scale(0);
+    opacity: 0.0;   
+  }
+  60% {
+    -webkit-transform: scale(1.1);
+  }
+  80% {
+    -webkit-transform: scale(0.9);
+    opacity: 1; 
+  } 
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1; 
+  }   
+}
+
+#winner{
+  width: 700px;
+  margin: 0 auto;
+}
+
+h3{
+  font-size: 150%;
+}
+
+header{
+  width: 1500px;
+  margin: 0 auto;
+}
+
+.massive{
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+#loser{
+  width: 700px;
+  margin: 0 auto;
+}
+
+#controls{
+  width: 1000px;
+  margin: 20px auto;
+}
+
+#controls button{
+  display: inline-block;
+  width: 200px;
+  height: 70px;
+  background-color: rgb(165, 177, 76);
+  border-radius: 10px;
+}
+
+.win{
+  background-image: url('../images/bug.gif');
+}
+
+.mouse {
+    width: 66px;
+    height: 47px;
+    background: url("../images/photo.png") no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.mouse.rotate {
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}

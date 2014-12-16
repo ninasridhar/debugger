@@ -1,0 +1,37 @@
+<html ng-app="BugController">
+<head>
+  <title>Debugger</title>
+  <link href='http://fonts.googleapis.com/css?family=Fira+Mono' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="public/style.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script type="text/javascript" src="public/jquery-1.7.2.js"></script>
+  <script type="text/javascript" src="public/script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Debugger: <span>Debug the code before the time runs out...<span></h1>
+    <div id = 'nav'>
+      <h3><div id = 'timer'>Timer: </div></h3>
+      <div id = 'score'><h3>Score: </h3> </div>
+    </div>
+  </header>
+  <div id="controls">
+    <div id = "levels" >
+      <h3>Choose a level: </h3>
+      <button id="easy" type="button" value="Junior-Dev"><h3>Junior-Dev</h3></button>
+      <button id="medium" type="button" value="Mid-Level" ><h3>Mid-Level</h3></button>
+      <button id="hard" type="button" value="Senior-Dev" ><h3>Senior-Dev</h3></button>
+      <button id="extra-hard" type="button" value="Wizard" ><h3>Wizard</h3></button>
+    </div>
+    <div id = "new">
+      <button id="newgame" type="button" value="newgame" ><h3>Start a new game</h3></button>
+    </div>
+  </div>
+  <div id = "container">
+ 
+  <div id = "board">
+    <div class = "mouse"></div>
+  </div>
+  </div>
+</body>
+</html>
