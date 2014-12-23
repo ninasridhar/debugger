@@ -8,7 +8,7 @@ var easySpeed = 0.5,
 var speed; 
 
 var counter = 0;
-var timerId = 60,
+var timerId = 60;
 var timer = 60;
 
 $.fn.bounce = function(speed) {
